@@ -13,7 +13,7 @@ if (inputValue === '') {
 }
 
 // crossing out an item from the list of items
-li.on("dblclick", function () {
+li.on('dblclick', function () {
   li.toggleClass('strike');
 });
 
