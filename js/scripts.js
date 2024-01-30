@@ -1,4 +1,4 @@
-function newItem () {
+function newItem() {
 
 // adding a new item to the list of items
 let li = $('<li></li>');
