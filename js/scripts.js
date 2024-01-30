@@ -1,3 +1,5 @@
+function newItem () {
+
 // adding a new item to the list of items
 let li = $('<li></li>');
 let inputValue = $('#input').val();
@@ -27,3 +29,8 @@ crossOutButton.on('click', function () {
 
 // making the items reorderable by dragging and dropping them 
 $('#list').sortable();
+
+// making inputValue blank after the user adds the last list item
+$('#input').val('');
+
+}
