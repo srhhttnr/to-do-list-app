@@ -21,11 +21,6 @@ let crossOutButton = ("<crossOutButton></crossOutButton>");
 $("crossOutButton").append("X");
 li.append(crossOutButton);
 
-// adding class 'delete' to list items when "X" button is clicked
-crossOutButton.on("click", function () {
-  li.addClass("delete");
-});
-
 // making the items reorderable by dragging and dropping them 
 $("#list").sortable();
 
@@ -33,3 +28,8 @@ $("#list").sortable();
 $("#input").val("");
 
 }
+
+// adding class 'delete' to list items when "X" button is clicked
+crossOutButton.on("click", function () {
+  li.addClass("delete");
+});
